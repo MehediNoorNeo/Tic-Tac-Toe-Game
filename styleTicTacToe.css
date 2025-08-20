@@ -1,0 +1,93 @@
+body{
+    background-color: #FFD9DA;
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;      /* center horizontally */
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;      /* space between title and board */
+    font-weight: extra-bold;
+    font-size: 3rem;
+    color: #0F5257; /* Adjusted to match the button color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.board {
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.cell {
+    width: 18vmin;
+    height: 18vmin;
+    background: #2292A4;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 4px 2px rgba(0, 0, 0, 0.7);
+}
+
+.taken {
+    cursor: not-allowed;
+}
+
+.winner {
+    background: #a7ffe9;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0F5257; /* Adjusted to match the button color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px; /* Increased padding for a better look */
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    
+    /* New color scheme with #0F5257 */
+    background: linear-gradient(145deg, #13686e, #0f5257);
+    border: 1px solid #0c4246;
+    
+    /* Enhanced shadows for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    /* Brighter gradient and more prominent shadow on hover */
+    background: linear-gradient(145deg, #167e85, #115e64);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+button:active {
+    /* "Pressed in" effect */
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
