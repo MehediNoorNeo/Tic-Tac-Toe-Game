@@ -77,14 +77,6 @@ No installation or additional dependencies are required.
 
 ---
 
-## 📷 Screenshot
-
-| Desktop View |
-|--------------|
-| ![Game Screenshot](images/homepage.png) |
-
----
-
 ## 🎯 Learning Objectives
 
 This project was built to practice:
